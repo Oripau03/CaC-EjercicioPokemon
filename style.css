@@ -1,0 +1,139 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background-image: url(./wallpaper.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: system-ui;
+    font-size: small;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-self: center;
+    width: 20rem;
+    height: 30rem;
+    border: #F3DA63 10px solid;
+    border-radius: 10px;
+    background-color: #ED82B2;
+    padding: 3rem 0.5rem .5rem;
+    position: relative;
+
+}
+.poke_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: -25px;
+    left: -1px;
+}
+.poke_name_rectangle{
+    border: #F3DA63 3px solid;
+    border-radius: 10px;
+    background-color: white;
+    padding: .2rem 4rem;
+    justify-content: center;
+    font-style: italic;
+}
+.poke_name p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: .3rem;
+    
+}
+picture{
+    display: flex;
+    background-image: url(./bosque.jpg);
+    margin: .5rem;
+    border-radius: 5px;
+}
+.poke_pic img{
+    height: 7rem;
+    width: auto;  
+    margin: 1rem auto; 
+}
+.poke_desc{
+    margin: 0 .5rem;
+    text-align: justify;
+}
+.poke_data{
+    padding: .5rem;
+}
+.poke_data ul{
+    border-radius: 5px;
+    background-color: rgb(250, 235, 215,.5);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.poke_data li{
+    padding: 0.3rem;
+    width: 100px;
+    align-self: center;
+}
+.poke_data li img{
+    height: 1rem;
+    margin: 0 1rem;
+}
+.poke_gender{
+    display: flex;
+}
+h1{
+    font-size: 1.5rem;
+}
+.poke_types{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0.5rem;
+}
+.types1, .types2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.rectangle{
+    padding: .2rem .5rem;
+    margin: .2rem;
+    width: 7rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.poke_types span{
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px black;
+}
+.normal{
+    background-color: #A4ACAF;
+}
+.hada{
+    background-color: #FDB9E9;
+}
+.acero{
+    background-color: #9EB7B8;
+}
+.veneno{
+    background-color: #B97FC9;
+}
+
+@media (max-width: 768px){
+    body{
+        max-height: unset;
+        min-height: 100vh;
+    }
+}
